@@ -9,6 +9,48 @@
 		<!-- <header>
 		</header> -->
 		<article>
+			<div> <!-- страница 1 -->
+				<h1> Сравнение открытых OLAP-систем Big Data: ClickHouse, Druid и Pinot </h1>
+					<p>
+						Оригинал - https://medium.com/@leventov/comparison-of-the-open-source-olap-systems-for-big-data-clickhouse-druid-and-pinot-8e042a5ed1c7
+					</p>
+					<p>
+						<a href="https://clickhouse.yandex/" title="перейти на ClickHouse.yandex"> ClickHouse </a>,
+						<a href="http://druid.io/" title="перейти на Druid.io"> Druid </a> и 
+						<a href="https://github.com/apache/incubator-pinot" title="перейти на github.com"> Pinot </a>
+						 – три открытых хранилища данных, которые позволяют выполнять аналитические запросы на больших объемах данных с интерактивными задержками. Эта статья - перевод 
+						<a href="https://medium.com/@leventov/comparison-of-the-open-source-olap-systems-for-big-data-clickhouse-druid-and-pinot-8e042a5ed1c7"  title="перейти на medium.com"> подробного сравнения </a>, 
+						выполненного Романом Левентовым.
+					</p>
+				<h3>Источники информации</h3>
+					<p>
+						<!--  тут strong т.к. показалось семантически важным -->
+						Подробности реализации <strong> ClickHouse </strong> стали мне известны от 
+						<a hef="https://github.com/ztlpn" title="перейти на github.com"> Алексея Зателепина </a>,
+						одного из <b> ключевых разработчиков проекта </b>. Доступная на английском документация достаточно скудна – наилучшим источником информации служат последние четыре секции 
+						<a href="https://clickhouse.yandex/docs/en/development/architecture/" title="переход на ClickHouse.yandex"> данной страницы документации </a>.
+					</p>
+					<p>
+						<b> Я сам участвую в развитии </b> <strong> Druid </strong>, но у меня нет личной заинтересованности в этой системе - по правде говоря, скорее всего в ближайшее время я перестану заниматься её разработкой. Поэтому читатели могут рассчитывать на отсутствие какой-либо предвзятости.
+					</p>
+					<p>
+						Всё, что я буду далее писать про <strong> Pinot </strong>, основывается на странице 
+						<a href="https://github.com/apache/incubator-pinot/wiki/Architecture" title="перейти на github.com">Архитектура в вики Pinot</a>,
+						а также на других страницах вики в разделе “Проектная документация”. Последний раз они обновлялись в июне 2017 года - больше, чем полгода назад.
+					</p>
+					<p>
+						Рецензентами оригинальной статьи стали Алексей Зателепин и 
+						<a href="https://github.com/ludv1x" title="перейти на github.com"> Виталий Людвиченко </a>
+						(разработчики ClickHouse), 
+						<a href="https://github.com/gianm" title="перейти на github.com"> Жан Мерлино </a> (самый активный разработчик Druid),
+						<a href="https://github.com/kishoreg" title="перейти на github.com"> Кишор Гопалакришна </a>
+						(архитектор Pinot) и 
+						<a href="https://github.com/jfim" title="перейти на github.com"> Жан-Француа Им </a> (разработчик Pinot). Мы присоединяемся к благодарности автора и полагаем, что это многократно повышает авторитетность статьи.
+					</p>
+					<p>
+						<b> Предупреждение </b>: статья достаточно большая, поэтому вполне возможно вы захотите ограничиться прочтением раздела “Заключение” в конце.
+					</p>
+			</div>
 		</article>
 		<!-- <footer>	
 		</footer> -->
